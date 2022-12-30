@@ -2,9 +2,12 @@ import React from "react";
 import { BsMap, BsTelephone, BsShare } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 const Contact = () => {
-  window.location.pathname === "/contact"
-    ? (document.title = "Contact")
-    : (document.title = "Home");
+  if (window.location.pathname === "/contact") {
+    document.title = "Contact";
+    window.scrollTo(0, 0);
+  } else {
+    document.title = "Home";
+  }
   return (
     <section
       className={`contact pb-20 ${

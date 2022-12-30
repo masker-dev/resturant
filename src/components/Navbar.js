@@ -17,13 +17,10 @@ const Navbar = () => {
   window.onscroll = () => {
     myHeader.current.classList.toggle("stikky", window.scrollY > 120);
   };
-  const navLink = document.querySelectorAll(".nav-link");
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  navLink.onClick = () => {
-    setIsOpen(!isOpen);
-  };
+
   return (
     <header
       id="header"

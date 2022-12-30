@@ -6,10 +6,15 @@ import { FaPlay } from "react-icons/fa";
 import IframeVid from "./IframeVid";
 
 const About = () => {
+  if (window.location.pathname !== "/") window.scrollTo(0, 0);
+
   const [vidState, setVidState] = useState(false);
-  window.location.pathname === "/about"
-    ? (document.title = "About")
-    : (document.title = "Home");
+  if (window.location.pathname === "/about") {
+    document.title = "About";
+    window.scrollTo(0, 0);
+  } else {
+    document.title = "Home";
+  }
   const showIframe = () => {
     console.log("you clicked me");
     setVidState(true);

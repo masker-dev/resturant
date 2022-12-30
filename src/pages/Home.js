@@ -11,10 +11,8 @@ import Testimonials from "../components/home/Testimonials";
 import WhyChoose from "../components/home/WhyChoose";
 import { BsArrowUpShort } from "react-icons/bs";
 
-import "aos/dist/aos.css";
-
 const Home = () => {
-  const [arrowState, setArrowState] = useState(true);
+  const [arrowState, setArrowState] = useState(false);
   const upper = useRef();
   const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -43,7 +41,9 @@ const Home = () => {
       {arrowState && (
         <div
           ref={upper}
-          className={`upper w-12 h-12 fixed bottom-3 right-3 bg-red-600 text-white rounded-full flex justify-center items-center `}
+          className={`upper w-12 h-12 fixed bottom-3 right-3 ${
+            arrowState ? "block" : "hidden"
+          } bg-red-600 text-white rounded-full flex justify-center items-center `}
         >
           <button onClick={scrollTop}>
             <BsArrowUpShort className="text-2xl font-semibold" />

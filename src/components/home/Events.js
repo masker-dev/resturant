@@ -7,9 +7,12 @@ import pic3 from "../../images/birthday.jpg";
 import pic4 from "../../images/diningTab2.jpg";
 
 const Events = () => {
-  window.location.pathname === "/events"
-    ? (document.title = "Events")
-    : (document.title = "Home");
+  if (window.location.pathname === "/events") {
+    document.title = "Events";
+    window.scrollTo(0, 0);
+  } else {
+    document.title = "Home";
+  }
   let events = [
     {
       title: "Custom Parties",

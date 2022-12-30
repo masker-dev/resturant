@@ -8,20 +8,13 @@ import Aos from "aos";
 import { useEffect } from "react";
 import Contact from "./components/home/Contact";
 import Events from "./components/home/Events";
+import "aos/dist/aos.css";
 
 function App() {
   useEffect(() => {
     Aos.init({
       duration: 1000,
       once: true,
-      disable: () => {
-        if (window.location.pathname !== "/") {
-          window.scrollTo(0, 0);
-          return true;
-        } else {
-          return false;
-        }
-      },
     });
   }, []);
   return (

@@ -3,7 +3,7 @@ import pic from "../../images/baltes.jpg";
 
 const BookTable = () => {
   return (
-    <section className="bookTable py-20">
+    <section className="bookTable py-20" id="book">
       <div className="container mx-auto px-5">
         <div className="title mb-10 text-center" data-aos="fade-up">
           <p className="text-sm text-slate-500 mb-4">BOOK A TABLE</p>

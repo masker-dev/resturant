@@ -67,7 +67,13 @@ const Footer = () => {
                 <BsInstagram className=" text-gray-300" />
               </button>
               <button className="p-3 rounded-full border border-gray-500 mr-3">
-                <BsLinkedin className=" text-gray-300" />
+                <a
+                  href="https://www.linkedin.com/in/ahmed-mohammed-04a946202?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BFibpltPlS5ucBk6x5svvUg%3D%3D"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <BsLinkedin className=" text-gray-300" />
+                </a>
               </button>
             </div>
           </div>

@@ -13,7 +13,7 @@ const WhyChoose = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <h3 className="text-4xl font-bold mb-7">Why Choose Sherco?</h3>
+            <h3 className="text-4xl font-bold mb-7">Why Choose KavaFood ?</h3>
             <p className="font-semibold mb-7">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
@@ -140,27 +140,6 @@ const WhyChoose = () => {
             <h1 className="text-5xl font-bold text-white">32</h1>
             <p className="text-gray-400 text-lg font-medium">Workers</p>
           </div>
-          {/*<div className="first bg-red-500 w-full flex flex-col sm:flex-row  text-center">
-            
-             <div className="clients">
-              <h1 className="text-white">232</h1>
-              <p>Clients</p>
-            </div>
-            <div className="projects">
-              <h1>521</h1>
-              <p>Projects</p>
-            </div>
-          </div>
-          <div className="second w-full bg-blue-900 flex flex-col sm:flex-row text-center">
-            <div className="support">
-              <h1>1453</h1>
-              <p>Hours of support</p>
-            </div>
-            <div className="workers">
-              <h1>32</h1>
-              <p>Workers</p>
-            </div> 
-          </div>*/}
         </div>
       </section>
     </>

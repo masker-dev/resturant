@@ -17,7 +17,11 @@ const Navbar = () => {
   window.onscroll = () => {
     myHeader.current.classList.toggle("stikky", window.scrollY > 120);
   };
+  const navLink = document.querySelectorAll(".nav-link");
   const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+  navLink.onClick = () => {
     setIsOpen(!isOpen);
   };
   return (
@@ -38,22 +42,22 @@ const Navbar = () => {
           } flex flex-col justify-start bg-teal-800 md:bg-inherit  md:static md:flex-row md:justify-between md:items-center md:w-1/3 duration-500`}
         >
           <div className="mb-4 ">
-            <NavLink to="/" className="nav-link">
+            <NavLink to="/" className="nav-link" onClick={toggleMenu}>
               Home
             </NavLink>
           </div>
           <div className="mb-4">
-            <NavLink to="about" className="nav-link">
+            <NavLink to="about" className="nav-link" onClick={toggleMenu}>
               About
             </NavLink>
           </div>
           <div className="mb-4">
-            <NavLink to="contact" className="nav-link">
+            <NavLink to="contact" className="nav-link" onClick={toggleMenu}>
               Contact
             </NavLink>
           </div>
           <div className="mb-4">
-            <NavLink to="events" className="nav-link">
+            <NavLink to="events" className="nav-link" onClick={toggleMenu}>
               Events
             </NavLink>
           </div>

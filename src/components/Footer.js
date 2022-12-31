@@ -13,8 +13,8 @@ const Footer = () => {
   return (
     <footer style={{ background: "#1f1f24" }} className="py-11">
       <div className="container mx-auto px-5">
-        <div className="flex flex-row flex-wrap justify-between pb-10 border-b border-slate-800">
-          <div className="flex flex-row  w-full sm:w-5/12 md:w-3/12">
+        <div className="flex  flex-row flex-wrap sm:justify-between pb-10 border-b border-slate-800">
+          <div className="flex flex-row   mb-6 md:mb-2 w-full sm:w-5/12 md:w-3/12">
             <div className="pr-3 pt-1">
               <SlLocationPin className="text-2xl font-black text-white" />
             </div>
@@ -26,7 +26,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-row  w-full sm:w-5/12 md:w-3/12">
+          <div className="flex flex-row   mb-6 md:mb-2 w-full sm:w-5/12 md:w-3/12">
             <div className="pr-3 pt-1">
               <BsTelephone className="text-2xl font-black text-white" />
             </div>
@@ -35,11 +35,11 @@ const Footer = () => {
               <p className="text-sm text-gray-300">
                 <span className="font-black">Phone: </span>+249 999600611
                 <br />
-                <span className="font-black">Email: </span> info@example.com
+                <span className="font-black">Email: </span> maskerbos@gmail.com
               </p>
             </div>
           </div>
-          <div className="flex flex-row  w-full sm:w-5/12 md:w-3/12">
+          <div className="flex flex-row   mb-2 md:mb-2 w-full sm:w-5/12 md:w-3/12">
             <div className="pr-3 pt-1">
               <AiOutlineClockCircle className="text-2xl font-black text-white" />
             </div>
@@ -54,7 +54,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="w-full sm:w-5/12 md:w-3/12">
+          <div className="w-full mb-2 md:mb-2 sm:w-5/12 md:w-3/12">
             <p className=" text-white text-lg font-black mb-2">Follow Us</p>
             <div className="">
               <button className="p-3 rounded-full border border-gray-500 mr-3">

@@ -9,7 +9,7 @@ const Navbar = () => {
   const myHeader = useRef();
   const navMenu = useRef();
   const [isOpen, setIsOpen] = useState(true);
-  window.onresize = () => {
+  window.onload = () => {
     let secWidth = window.innerWidth;
     if (secWidth < 768) myHeader.current.classList.add("mobileView");
     else myHeader.current.classList.remove("mobileView");
